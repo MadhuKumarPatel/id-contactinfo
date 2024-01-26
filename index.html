@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            border: border-box;
+        }
+
+        .task1 {
+            height: 500px;
+            width: 300px;
+        }
+
+        .nav {
+            height: 50px;
+            width: 300px;
+            background-color: rgb(117, 223, 117);
+        }
+
+        .headcnt img {
+            height: 20px;
+            width: 25px;
+            position: absolute;
+            top: 22px;
+            left: 20px;
+        }
+
+        .book {
+            color: white;
+            position: absolute;
+            left: 125px;
+        }
+
+        .call-img img {
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            top: 18px;
+            left: 270px;
+        }
+
+        iframe {
+            /* z-index: 2; */
+            width: 300px;
+            height: 450px;
+            border: none;
+        }
+
+        .nav2 {
+            width: 300px;
+            position: absolute;
+            top: 60px;
+            display: flex;
+            left: 20px;
+            /* justify-content: space-evenly; */
+        }
+
+        .pick {
+            height: 40px;
+            width: 140px;
+            /* color: white; */
+            background-color: azure;
+            border-radius: 10px;
+            text-align: center;
+            border-radius: 2px;
+            font-size: 14px;
+
+        }
+
+        .drop {
+            height: 40px;
+            width: 140px;
+            border-radius: 2px;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            background-color: rgb(14, 161, 206);
+        }
+
+        .nav3 {
+            height: 50px;
+            width: 300px;
+            position: absolute;
+            top: 150px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .date input {
+            height: 35px;
+            width: 110px;
+            border: none;
+            border-radius: 5px;
+            background-color: aliceblue;
+        }
+
+        .time input {
+            height: 35px;
+            width: 110px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            background-color: aliceblue;
+        }
+
+        .next {
+            position: absolute;
+            top: 460px;
+            left: 15px;
+        }
+
+        .next button {
+            height: 35px;
+            width: 280px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(14, 161, 206);
+            color: white;
+        }
+
+        .task2 {
+            width: 300px;
+            height: 460px;
+            background-color:rgba(250, 235, 215, 0.39);
+            /* border: 1px solid black;/ */
+            position: absolute;
+            left: 350px;
+            top: 10px;
+        }
+
+        .navbar{
+            height: 50px;
+            width: 300px;
+            background-color: aqua;
+        }
+        .head{
+            margin-top: -16px;
+        }
+        .head img{
+            height: 20px;
+            width: 25px;
+            position: absolute;
+            top: 15px;
+            left: 12px;
+        }
+        .act{
+            position: relative;
+            left: 100px;
+            top: 15px;
+        }
+        .callimg img{
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            top: 12px;
+            left: 265px;
+        }
+        .person{
+            position: absolute;
+            left: 80px;
+            position: relative;
+            top: 10px;
+        }
+        .details{
+            height: 160px;
+           /* background-color: gray;/ */
+           position: relative;
+           top: 30px;
+        }
+        .phone{
+            height: 40px;
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            top: 10px;
+        }
+        .m1{
+            height: 30px;
+            position: relative;
+            top: 5px;
+        }
+        .phone input{
+            border-radius: 10px;
+            text-align: center;
+        }
+        .m2{
+            height: 35px;
+            position: relative;
+            top: 5px;
+        }
+        .email{
+            height: 40px;
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            top: 20px;
+            left: 3px;
+        }
+        .m3{
+            height: 25px;
+            position: relative;
+            top: 5px;
+        }
+        .email input{
+            border-radius: 10px;
+            text-align: center;
+        }
+        .m4{
+            height: 35px;
+            position: relative;
+            top: 5px;
+        }
+        /* pass */
+        .pass{
+            height: 40px;
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            top: 30px;
+            left: 4px;
+        }
+        .m5{
+            height: 25px;
+            position: relative;
+            top: 7px;
+        }
+        .pass input{
+            border-radius: 10px;
+            text-align: center;
+        }
+        .m6{
+            height: 35px;
+            position: relative;
+            top: 5px;
+        }
+        .exit{
+            height: 40px;
+            position: relative;
+            top: 60px;
+            display: flex;
+            justify-content: space-evenly;
+        }  
+        .log{
+            width: 148px;
+            background-color: rgb(131, 214, 7);
+            text-align: center;
+        }     
+        .save{
+            width: 148px;
+            background-color: rgb(131, 214, 7);
+            text-align: center;
+        }     
+    </style>
+</head>
+
+<body>
+    <div class="task1">
+        <div class="nav">
+            <div class="headcnt">
+                <img src="./more.png" alt="">
+            </div>
+            <div class="book">
+                <p>Book Now</p>
+            </div>
+            <div class="call-img">
+                <img src="./missed-call.png" alt="">
+            </div>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.301802724675!2d78.39954787390856!3d17.493100799753652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91625d9cd1ad%3A0x4455387ad24a675d!2s10000coders!5e0!3m2!1sen!2sin!4v1704357725040!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="nav2">
+            <div class="pick">
+                <p>PICK UP</p>
+            </div>
+            <div class="drop">
+                <p>DROP OFF</p>
+            </div>
+        </div>
+        <div class="nav3">
+            <div class="date">
+                <input type="date" name="" id="">
+            </div>
+            <div class="time">
+                <input type="time">
+            </div>
+        </div>
+        <div class="next">
+            <button type="submit">
+                NEXT
+            </button>
+        </div>
+    </div>
+
+    <div class="task2">
+        <div class="navbar">
+            <div class="head">
+                <img src="./more.png" alt="">
+            </div>
+            <div class="act">
+                <p>MY ACCOUNT</p>
+            </div>
+            <div class="callimg">
+                <img src="./missed-call.png" alt="">
+            </div>
+        </div>
+        <div class="person">
+            <img src="./download.jpeg" alt="">
+        </div>
+        <div class="details">
+            <div class="phone">
+                <img class="m1" src="./call.png  " alt="">
+                <input type="tel" placeholder="+91 9999999999">
+                <img class="m2" src="./tool.png" alt="">
+            </div>
+            <div class="email">
+                <img class="m3" src="./email.png" alt="">
+                <input type="email" placeholder="abc@gmail.com">
+                <img class="m4" src="./tool.png" alt="">
+            </div>
+            <div class="pass">
+                <img class="m5" src="./padlock.png" alt="">
+                <input type="password" placeholder="*******">
+                <img class="m6" src="./tool.png" alt="">
+            </div>
+            <div class="exit">
+                <div class="log">
+                    <p>LOG OUT</p>
+                </div>
+                <div class="save">
+                    <p>SAVE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
